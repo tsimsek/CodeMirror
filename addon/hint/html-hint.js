@@ -157,7 +157,7 @@
         kernelUnitLength: null
       }
     },
-    feDisplaementMap: {
+    feDisplacementMap: {
       attrs: {
         in: null,
         in2: null,
@@ -420,6 +420,7 @@
     populate(data[tag]);
 
   CodeMirror.htmlSchema = data;
+  CodeMirror.htmlGlobalAttributes = globalAttrs;
   function htmlHint(cm, options) {
     var local = {schemaInfo: data};
     if (options) for (var opt in options) local[opt] = options[opt];
