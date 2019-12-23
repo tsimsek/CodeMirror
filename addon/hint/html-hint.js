@@ -103,6 +103,75 @@
     em: s,
     embed: { attrs: { src: null, type: null, width: null, height: null } },
     eventsource: { attrs: { src: null } },
+    feBlend: {
+      attrs: {
+        in: null,
+        in2: null,
+        mode: ["normal", "multiply", "screen", "overlay", "darken", "lighten",
+               "color-burn", "hard-light", "soft-light", "difference", "hue",
+               "saturation", "color"]
+      }
+    },
+    feColorMatrix: {
+      attrs: {
+        in: null,
+        type: ["matrix", "saturate", "hueRotate", "luminanceToAlpha"],
+        values: null
+      }
+    },
+    feComponentTransfer: {
+      attrs: {
+        in: null
+      }
+    },
+    feComposite: {
+      attrs: {
+        in: null,
+        in2: null,
+        operator: ["over","in","out","atop","xor","lighter","arithmetic"],
+        k1: null,
+        k2: null,
+        k3: null,
+        k4: null
+      }
+    },
+    feConvolveMatrix: {
+      attrs: {
+        in: null,
+        order: null,
+        kernelMatrix: null,
+        divisor: null,
+        bias: null,
+        targetX: null,
+        targetY: null,
+        edgeMode: null,
+        kernelUnitLength: null,
+        preserveAlpha: null
+      }
+    },
+    feDiffuseLighting: {
+      attrs: {
+        in: null,
+        surfaceScale: null,
+        diffuseConstant: null,
+        kernelUnitLength: null
+      }
+    },
+    feDisplaementMap: {
+      attrs: {
+        in: null,
+        in2: null,
+        scale: null,
+        xChannelSelector: ["R","G","B","A"],
+        yChannelSelector: ["R","G","B","A"]
+      }
+    },
+    feFlood: {
+      attrs: {
+        "flood-color": null,
+        "flood-opacity": null
+      }
+    },
     fieldset: { attrs: { disabled: ["", "disabled"], form: null, name: null } },
     figcaption: s,
     figure: s,
@@ -259,6 +328,16 @@
     sub: s,
     summary: s,
     sup: s,
+    svg: {
+      attrs: {
+        height: null,
+        preserveAspectRatio: null,
+        viewBox: null,
+        width: null,
+        x: null,
+        y: null
+      }
+    },
     table: s,
     tbody: s,
     td: { attrs: { colspan: null, rowspan: null, headers: null } },
